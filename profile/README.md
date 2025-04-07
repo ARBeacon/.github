@@ -1,12 +1,70 @@
-## Hi there 👋
+**Project Title:** BLE & UWB Beacon-Assisted Framework for Multiuser AR Synchronization
 
-<!--
+[📄 Extended Abstract](extended_abstract.pdf) | [📚 Reports](Reports)
 
-**Here are some ideas to get you started:**
+## 📖 Project Overview
+This project develops a framework to synchronize Augmented Reality (AR) experiences across multiple devices in shared environments using Bluetooth Low Energy (BLE) and Ultra-Wideband (UWB) beacon technologies. The system addresses scalability and reliability challenges in traditional vision-based AR synchronization by leveraging beacon-assisted spatial referencing.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+### ✨ Key Features
+**BLE-Assist AR Synchronization:**
+    - Room-based ARWorldMap segmentation for scalable localization.
+    - Cloud Anchor synchronization with dynamic room context.
+    
+**UWB-Assist AR Synchronization:**
+    - Centimeter-precise UWB ranging and magnetic heading fusion.
+    - Homogeneous transformation for persistent anchor resolution.
+
+## 📂 Repositories
+### 📱 Client (AR Apps)
+1. **BLE-Assist AR Synchronization:** Uses iBeacon for room context recognition and integrates with ARKit [ARWorldMap](https://developer.apple.com/documentation/arkit/arworldmap) and ARCore [Cloud Anchors](https://developers.google.com/ar/develop/cloud-anchors). 
+
+| Repository   | Description |
+| ------------- | ------------- |
+| [BeaconScanner](https://github.com/ARBeacon/BeaconScanner) | iOS app for detecting and monitoring iBeacon signals. |
+| [BeaconSyncAR-iBeacon-ARKit](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit) | BLE-assisted AR synchronization using Apple ARKit's ARWorldMap. |
+| [BeaconSyncAR-iBeacon-ARCore](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit) | BLE-assisted AR synchronization using Google ARCore's Cloud Anchors. |
+
+2. **UWB-Assist AR Synchronization:** Utilizes UWB's precise ranging and magnetic heading to establish fixed spatial references for persistent AR anchoring. 
+
+| Repository   | Description |
+| ------------- | ------------- |
+| [UWBScanner](https://github.com/ARBeacon/UWBScanner) | iOS app for UWB beacon ranging and stabilization using Apple Nearby Interaction. |
+| [BeaconSyncAR-UWB-ARKit](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit) | UWB-assisted AR synchronization with ARKit, enabling persistent spatial references. |
+
+### 🛰️ Server
+| Repository   | Description |
+| ------------- | ------------- |
+| [BeaconSyncAR-api](https://github.com/ARBeacon/BeaconSyncAR-api) | Backend service (Swift Vapor) for managing rooms, beacons, ARWorldMaps, and anchors. |
+| [BeaconSyncAR-namespace-functions](https://github.com/ARBeacon/BeaconSyncAR-namespace-functions) | Serverless functions for generating ARCore API OAuth2 tokens to authorize backend requests. |
+
+### 📈 Evaluation
+| Repository   | Description |
+| ------------- | ------------- |
+| [ARBeaconEvaluation](https://github.com/ARBeacon/ARBeaconEvaluation) | Evaluation scripts and logs for accuracy, latency, robustness, and power consumption tests. |
+
+## 🛠 Technologies
+**BLE-Assist AR Synchronization:**
+- **Hardware:** ESP32 (BLE Beacon), iPhone
+- **Software:** Swift, ARKit, ARCore, SwiftUI, PostgreSQL, Digital Ocean Spaces (S3-compatible)
+- **Protocols:** [iBeacon](https://developer.apple.com/ibeacon/)
+  
+**UWB-Assist AR Synchronization:**
+- **Hardware:** [DWM3001CDK](https://www.qorvo.com/products/p/DWM3001CDK) (UWB Beacon), iPhone (UWB-enabled)
+- **Software:** Swift, ARKit, SwiftUI, PostgreSQL
+- **Protocols:** [FiRa](https://www.firaconsortium.org/) (UWB), Nearby Interaction (Apple)
+
+## 🚀 Getting Started
+#### 1. **Backend Deployment** 
+Follow instructions in [BeaconSyncAR-api](https://github.com/ARBeacon/BeaconSyncAR-api) to set up database and server.
+
+#### 2. **Client AR Apps**
+Follow instructions in each approach's repository to set up the AR app.
+
+**BLE-Assist AR Synchronization:**
+- [BeaconSyncAR-iBeacon-ARKit (BLE-Assst ARWorldMap)](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit)
+- [BeaconSyncAR-iBeacon-ARCore (BLE-Assst Cloud Anchors)](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit)
+**BLE-Assist AR Synchronization:**
+- [BeaconSyncAR-UWB-ARKit (UWB-Assist)](https://github.com/ARBeacon/BeaconSyncAR-UWB-ARKit)
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
