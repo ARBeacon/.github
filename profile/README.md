@@ -7,12 +7,14 @@ This project develops a framework to synchronize Augmented Reality (AR) experien
 
 ### ✨ Key Features
 **BLE-Assist AR Synchronization:**
-    - Room-based ARWorldMap segmentation for scalable localization.
-    - Cloud Anchor synchronization with dynamic room context.
-    
+![Frame 7 (1)](https://github.com/user-attachments/assets/fc92a98c-68a6-44a6-aec2-a6e084903e83)
+- Room-based ARWorldMap segmentation for scalable localization.
+- Cloud Anchor synchronization with dynamic room context.
+
 **UWB-Assist AR Synchronization:**
-    - Centimeter-precise UWB ranging and magnetic heading fusion.
-    - Homogeneous transformation for persistent anchor resolution.
+![Frame 9 (1)](https://github.com/user-attachments/assets/b2cc12c3-d198-43ce-92d7-1c3c771b265d)
+- Centimeter-precise UWB ranging and magnetic heading fusion.
+- Homogeneous transformation for persistent anchor resolution.
 
 ## 📂 Repositories
 ### 📱 Client (AR Apps)
