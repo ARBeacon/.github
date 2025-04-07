@@ -1,6 +1,6 @@
 **Project Title:** BLE & UWB Beacon-Assisted Framework for Multiuser AR Synchronization
 
-[📄 Extended Abstract](extended_abstract.pdf) | [📚 Reports](Reports)
+[📄 Extended Abstract](https://github.com/ARBeacon/Docs/blob/main/Extended%20Abstract.pdf) | [📚 Reports](https://github.com/ARBeacon/Docs/tree/main/Reports) | [🖼️ Slides](https://github.com/ARBeacon/Docs/blob/main/Keynote.pdf) | [📇 Poster](https://github.com/ARBeacon/Docs/blob/main/Poster.pdf)
 
 ## 📖 Project Overview
 This project develops a framework to synchronize Augmented Reality (AR) experiences across multiple devices in shared environments using Bluetooth Low Energy (BLE) and Ultra-Wideband (UWB) beacon technologies. The system addresses scalability and reliability challenges in traditional vision-based AR synchronization by leveraging beacon-assisted spatial referencing.
