@@ -1,3 +1,5 @@
+[![arXiv](https://img.shields.io/badge/arXiv-2504.05293-<COLOR>.svg)](https://arxiv.org/abs/2504.05293)
+
 **Project Title:** BLE & UWB Beacon-Assisted Framework for Multiuser AR Synchronization
 
 [📄 Extended Abstract](https://github.com/ARBeacon/Docs/blob/main/Extended%20Abstract.pdf) | [📚 Reports](https://github.com/ARBeacon/Docs/tree/main/Reports) | [🖼️ Slides](https://github.com/ARBeacon/Docs/blob/main/Keynote.pdf) | [📇 Poster](https://github.com/ARBeacon/Docs/blob/main/Poster.pdf)
@@ -70,3 +72,5 @@ Follow instructions in each approach's repository to set up the AR app.
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
+
+_Note: This README.md was refined with the assistance of [DeepSeek](https://www.deepseek.com)_
