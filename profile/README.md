@@ -4,6 +4,8 @@
 
 [📄 Extended Abstract](https://github.com/ARBeacon/Docs/blob/main/Extended%20Abstract.pdf) | [📚 Reports](https://github.com/ARBeacon/Docs/tree/main/Reports) | [🖼️ Slides](https://github.com/ARBeacon/Docs/blob/main/Keynote.pdf) | [📇 Poster](https://github.com/ARBeacon/Docs/blob/main/Poster.pdf) | [📹 Demo](https://share.descript.com/view/GvDXv3NAZu4)
 
+<img src="https://github.com/user-attachments/assets/ae1eee5b-6c5e-4e58-9d83-81537c3d57ab" width="30%">
+
 ## 📖 Project Overview
 This project develops a framework to synchronize Augmented Reality (AR) experiences across multiple devices in shared environments using Bluetooth Low Energy (BLE) and Ultra-Wideband (UWB) beacon technologies. The system addresses scalability and reliability challenges in traditional vision-based AR synchronization by leveraging beacon-assisted spatial referencing.
 
